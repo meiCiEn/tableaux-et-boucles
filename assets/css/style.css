@@ -1,0 +1,95 @@
+.hidden {
+    display: none;
+}
+
+:root {
+    --bg: #fafafa;
+    --forms: #c4c1e0;
+    --buttons: #7c73e6;
+    --alt-bg: #EA9010;
+    --text: #191308;
+}
+
+
+body {
+    color: var(--text);
+    background: var(--bg);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1,
+h2, h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 10px 0 20px 0;
+}
+
+div,
+main, section {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    margin: 5vw;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+input {
+    background: #ffffff;
+    border: solid var(--text) 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#btn-ajout {
+    margin-right: 20px;
+}
+
+#buttons-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 700px;
+}
+
+button, .chiffre {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.chiffre {
+    width: 50px;
+    height: 50px;
+    background: var(--alt-bg);
+    MARGIN-RIGHT: 20PX;
+}
+
+button {
+    background: var(--buttons);
+    min-width: 100px;
+    min-height: 50px;
+    height: fit-content;
+}
+
+/* #form-1, #form-2 {
+    flex-direction: column;
+    justify-content: space-between;
+    background: #c4c1e0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+} */

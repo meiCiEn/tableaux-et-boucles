@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Exo 08</title>
+</head>
+
+<body>
+    <main>
+        <h1>Exo 9 - Tableaux et boucles</h1>
+        <p>Réaliser une page web qui permet à l'utilisateur d'encoder des valeurs entières (avec validation simple)</p>
+
+        <!-- Affichage des valeurs -->
+        <section id="form-1">
+            <h2>Les valeurs du tableau</h2>
+            <div id="affichage-valeurs"></div>
+        </section>
+
+        <!-- Encodage des valeurs -->
+        <section id="form-2">
+            <h2>Manipulation sur le tableau</h2>
+            <div>
+                <label for="input-entier">Nouvelle valeur :</label>
+                <input type="number" id="input-entier" name="input-entier">
+            </div>
+            <div id="buttons-1">
+                <button id="btn-ajout">Ajouter</button>
+                <button id="btn-effacer">Effacer le contenu</button>
+            </div>
+        </section>
+
+        <section id="form-3">
+            <h2>Les interactions</h2>
+            <div id="buttons-2">
+                <!-- <button id="somme" type="submit">Somme</button>
+                <button id="moyenne" type="submit">Moyenne</button>
+                <button id="min" type="submit">Minimum</button>
+                <button id="max" type="submit">Maximum</button>
+                <button id="tab-1" type="submit">Tableau trié 1 (Bulle)</button>
+                <button id="tab-1" type="submit">Tableau trié 2 (Insert)</button>
+                <button id="sans-doublon" type="submit">Tableau sans doublon</button>
+                <button id="nb-elem" type="submit">Nombre d'éléments</button>
+                <button id="nb-elem-2" type="submit">Nombre d'éléments sans doublons</button> -->
+                </div>
+            </div>
+            <div id="resultat">
+
+            </div>
+        </section>
+
+        <!-- Affichage des resultats -->
+        <section id="form-4"></section>
+
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
